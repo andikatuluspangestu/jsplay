@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Playground with Dracula Theme</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Meta -->
+  <meta name="description" content="JSPlay is a simple JavaScript playground that allows you to write and execute JavaScript code in a single. It is a web-based application that runs in your browser without any installation.">
+  <meta name="keywords" content="javascript, playground, jsplay, jsplayground, javascript playground,jsplay">
+  <meta name="author" content="Andika Tulus Pangestu">
+
+  <!-- Meta URL -->
+  <meta property="og:url" content="https://andikatuluspangestu.github.io/jsplay">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JavaScript Playground with Dracula Theme">
+  <meta property="og:description" content="JSPlay is a simple JavaScript playground that allows you to write and execute JavaScript code in a single. It is a web-based application that runs in your browser without any installation.">
+  <meta property="og:image" content="https://andikatuluspangestu.github.io/jsplay/assets/img/thumbnail.png">
+
+  <!-- All Vendor -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dracula-theme@1.3.0/css/dracula.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duydao/monolisa-font/dist/css/monolisa.min.css">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container my-5">
+    <h1 class="mb-4 text-center"><strong style="color: #f1fa8c;">J</strong>ava <strong style="color: #f1fa8c;">S</strong>cript <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash"
+      viewBox="0 0 16 16">
+      <path
+        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+    </svg> Playground</h1>
+    <hr>
+    <div class="row">
+      <div class="col-lg-6">
+        <label for="" class="mb-2">Code Editor</label>
+        <textarea id="code" class="form-control" rows="10" placeholder="console.log('Hello World!')"></textarea>
+        <button id="runButton" class="btn btn-primary mt-3">Run</button>
+      </div>
+      <div class="col-lg-6">
+        <label for="" class="mb-2 xl-mt2">Output</label>
+        <div id="output" class="form-control py-2" rows="10" disabled aria-disabled="true"></div>
+      </div>
+    </div>
+    <section class="copyright text-center mt-4">
+      <small>
+        Build with <span class="text-danger">&hearts;</span> by <a href="andikatuluspangestu.github.io/"
+          class="text-decoration-none text-warning">@pgstu</a> | <a href="#" data-bs-toggle="modal"
+          data-bs-target="#myModal" class="text-decoration-none text-warning">
+          About
+        </a>
+      </small>
+      <br>
+      <span><small>
+        This project open source based on <a class="text-decoration-none" style="color: #50fa7b;" href="https://draculatheme.com/" target="_blank">Dracula Theme</a>
+      </small></span>
+    </section>
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">About</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          JSPlay is a simple JavaScript playground that allows you to write and execute JavaScript code in a single. It is a web-based application that runs in your browser without any installation.
+          This Editor support for version Javascript Popular and default EcmaScript 2015 (ES6).
+          <br>
+          If you see a bug or want to request a feature, please create an issue on <a href="" class="text-decoration-none text-warning">GitHub</a> and I will try to fix it as soon as possible. Also feel free to fork this project and send a pull request.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/index.js"></script>
+
+</body>
+
+</html>
