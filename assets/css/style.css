@@ -87,20 +87,3 @@ textarea:-webkit-autofill:active {
 .modal-header .btn-close:active {
   color: #ff5555;
 }
-
-#code,
-#highlighting {
-  margin: 10px;
-  padding: 10px;
-  border: 0;
-  width: calc(100% - 32px);
-  height: 150px;
-}
-
-#code,
-#highlighting,
-#highlighting * {
-  font-size: 15pt;
-  font-family: monospace;
-  line-height: 20pt;
-}
